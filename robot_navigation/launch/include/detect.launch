@@ -1,0 +1,8 @@
+<launch>
+  <!-- 启动人物识别节点 -->
+  <node pkg="robot_navigation" type="detect_plate.py" name="detect_plate" output="screen"/>
+
+  <!-- 启动交通标志识别节点 -->
+  <node pkg="robot_navigation" type="detect_person.py" name="detect_person" output="screen"/>
+
+</launch>
